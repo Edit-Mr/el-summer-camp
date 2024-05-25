@@ -342,3 +342,8 @@ input[type="submit"] {
     color: var(--primary);
     margin-block: 1rem;
 }
+
+#result h2{
+    text-align: center;
+    margin: auto;
+}
