@@ -1,12 +1,29 @@
 <!-- @format -->
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-hant">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
         <link rel="stylesheet" href="style.css" />
+        <meta name="description" content="2024暑期英語與思辨營隊" />
+        <meta
+            name="keywords"
+            content="力甄教育團隊, Education Legion, 英語, 思辨, 營隊, 2024"
+        />
+        <meta name="author" content="力甄教育團隊" />
+        <meta property="og:title" content="2024暑期英語與思辨營隊" />
+        <meta
+            property="og:description"
+            content="本次營隊分為【英文辯論營】與【口說演講營】兩種營隊，並同時於『台北』、『台中』、『高雄』三地開設實體營隊，挑戰學生對求知的堅持和英文語言應用的勇氣，在課堂中皆會有大量實作機會，以利於將學習到的辯論技巧內化。期待大家一起體驗頻繁的英文應用、思辨的討論體驗、場上交鋒越辯越明的節奏！"
+        />
+        <meta property="og:image" content="banner.jpg" />
+        <meta property="og:url" content="https://educationlegion.site/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="2024暑期英語與思辨營隊" />
+        <meta property="og:locale" content="zh_TW" />
+        <meta name="theme-color" content="#ffbd59" />
     </head>
     <body>
         <main>
@@ -254,6 +271,251 @@
                     註 (3): 第2,3項不可併用
                 </p>
             </section>
+            <section id="form">
+                <h2>營隊報名表單</h2>
+                <p class="selected remind">
+                    你已選擇<span id="chosen"></span>
+                    <button onclick="back()">(點我重新選擇)</button>。
+                    以下資料僅供本團隊營隊使用， 敬請安心填寫！
+                </p>
+                <form id="registrationForm">
+                    <label for="name">姓名:</label>
+                    <input type="text" id="name" name="name" required />
+
+                    <label for="school">就讀學校名稱／年級:</label>
+                    <input
+                        type="text"
+                        id="school"
+                        name="school"
+                        placeholder="例：力甄中學／高二"
+                        required
+                    />
+                    <label for="phone">手機號碼:</label>
+                    <input type="tel" id="phone" name="phone" required />
+
+                    <label for="english_score"
+                        >英文檢定成績 或 英文段考平均成績:</label
+                    >
+                    <input
+                        type="text"
+                        id="english_score"
+                        name="english_score"
+                        required
+                    />
+
+                    <label for="experience"
+                        >過去曾否參加過「英文辯論」、「英文演講」、「模聯」相關課程。若有，請簡述參加經驗與課程內容，以供講師了解學生先備能力。</label
+                    >
+                    <textarea
+                        id="experience"
+                        name="experience"
+                        required
+                        rows="3"
+                    ></textarea>
+
+                    <fieldset>
+                        <legend>您與孩子對課程的期待:</legend>
+                        <input
+                            type="checkbox"
+                            id="issue_awareness"
+                            name="expectations"
+                            value="認識國內外重大議題"
+                        />
+                        <label for="issue_awareness">認識國內外重大議題</label
+                        ><br />
+                        <input
+                            type="checkbox"
+                            id="peer_discussion"
+                            name="expectations"
+                            value="學習如何與同儕進行討論與思辨"
+                        />
+                        <label for="peer_discussion"
+                            >學習如何與同儕進行討論與思辨</label
+                        ><br />
+                        <input
+                            type="checkbox"
+                            id="debate_rules"
+                            name="expectations"
+                            value="清楚了解英辯規則"
+                        />
+                        <label for="debate_rules">清楚了解英辯規則</label>
+                        <br />
+                        <input
+                            type="checkbox"
+                            id="practical_opportunity"
+                            name="expectations"
+                            value="實作機會大於對於規則、技巧的講授"
+                        />
+                        <label for="practical_opportunity"
+                            >實作機會大於對於規則、技巧的講授</label
+                        ><br />
+                        <input
+                            type="checkbox"
+                            id="handling_confusion"
+                            name="expectations"
+                            value="學習如何在辯論中面對聽不懂的情況"
+                        />
+                        <label for="handling_confusion"
+                            >學習如何在辯論中面對聽不懂的情況</label
+                        ><br />
+                        <input
+                            type="checkbox"
+                            id="debate_usefulness"
+                            name="expectations"
+                            value="知道學英語辯論有什麼用"
+                        />
+                        <label for="debate_usefulness"
+                            >知道學英語辯論有什麼用</label
+                        ><br />
+                        <input
+                            type="checkbox"
+                            id="english_resources"
+                            name="expectations"
+                            value="課程能提供英文能力加強自學資源"
+                        />
+                        <label for="english_resources"
+                            >課程能提供英文能力加強自學資源</label
+                        >
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>您得知力甄暑期營隊的管道:</legend>
+                        <input
+                            type="radio"
+                            id="facebook_page"
+                            name="source"
+                            value="臉書粉專－力甄教育團隊"
+                        />
+                        <label for="facebook_page">臉書粉專－力甄教育團隊</label
+                        ><br />
+                        <input
+                            type="radio"
+                            id="facebook_ads"
+                            name="source"
+                            value="臉書廣告推播"
+                        />
+                        <label for="facebook_ads">臉書廣告推播</label><br />
+                        <input
+                            type="radio"
+                            id="instagram_ads"
+                            name="source"
+                            value="Instagram廣告推播"
+                        />
+                        <label for="instagram_ads">Instagram廣告推播</label
+                        ><br />
+                        <input
+                            type="radio"
+                            id="friend_recommendation"
+                            name="source"
+                            value="友人推薦"
+                        />
+                        <label for="friend_recommendation">友人推薦</label
+                        ><br />
+                        <input
+                            type="radio"
+                            id="other"
+                            name="source"
+                            value="其他"
+                        />
+                        <label for="other">其他</label><br />
+                        <input
+                            type="text"
+                            id="other_text"
+                            name="other_text"
+                            placeholder="請說明"
+                        />
+                    </fieldset>
+                    <fieldset>
+                        <legend>💡優惠調查💡</legend>
+                        <p>
+                            感謝大家報名參與力甄教育團隊2024暑期營隊，<br />
+                            我們將提供優惠給予各位好朋友!
+                        </p>
+                        <p class="intro">
+                            1. 極早鳥優惠 |
+                            舊生回家(曾為力甄/楊老師開設之課程、講座、師生研習員)
+                            $500<br />
+                            2. 二人同行報名每人折扣 $200<br />
+                            3. 三人同行報名每人折扣 $300<br />
+                            4. 高雄/屏東資優教育發展協會會員 折扣 $250<br />
+                            5. 高師大附中學生 8折優惠<br />
+                            <br />
+                            <i>
+                                * 註 (1): 第1項極早鳥與舊生優惠需擇一使用<br />
+                                * 註 (2): 第5項與1-4項不可併用<br />
+                                * 註 (3): 第2,3項不可併用</i
+                            >
+                        </p>
+                        <input
+                            type="checkbox"
+                            id="early_bird"
+                            name="discount"
+                            value="極早鳥優惠"
+                        />
+                        <label for="early_bird">極早鳥優惠</label><br />
+                        <input
+                            type="checkbox"
+                            id="returning_student"
+                            name="discount"
+                            value="舊生回家"
+                        />
+                        <label for="returning_student">舊生回家</label><br />
+                        <input
+                            type="checkbox"
+                            id="two_people"
+                            name="discount"
+                            value="二人同行報名"
+                        />
+                        <label for="two_people">二人同行報名</label><br />
+                        <input
+                            type="checkbox"
+                            id="three_people"
+                            name="discount"
+                            value="三人同行報名"
+                        />
+                        <label for="three_people">三人同行報名</label><br />
+                        <input
+                            type="checkbox"
+                            id="kaohsiung_association"
+                            name="discount"
+                            value="高雄資優教育發展協會會員"
+                        />
+                        <label for="kaohsiung_association"
+                            >高雄資優教育發展協會會員</label
+                        ><br />
+                        <input
+                            type="checkbox"
+                            id="high_school_student"
+                            name="discount"
+                            value="高師大附中學生"
+                        />
+                        <label for="high_school_student">高師大附中學生</label
+                        ><br />
+                        <input
+                            type="checkbox"
+                            id="none"
+                            name="discount"
+                            value="以上均無"
+                        />
+                        <label for="none">以上均無</label>
+                    </fieldset>
+                    <label for="message"
+                        >若您有任何想對力甄教育團隊說的話，歡迎在此留言:</label
+                    >
+                    <textarea id="message" name="message" row="3"></textarea>
+
+                    <input class="round" type="submit" value="提交" />
+                </form>
+            </section>
+            <section id="result">
+                <h2></h2>
+                <div class="success">
+                    非常感謝您報名參與力甄教育團隊 2024 暑期營隊，<br />
+                    我們將盡速確認報名資料，並寄送營隊及繳費相關資訊至<span
+                    ></span><br />
+                    若有任何問題也歡迎聯絡我們，將由專業人員為您解答！
+                </div>
+            </section>
             <footer>
                 力甄教育團隊 Education Legion<br />
                 <a href="mailto:contact@educationlegion.site">Email</a> ·
@@ -262,11 +524,124 @@
             </footer>
         </main>
         <script>
+            const translate = {
+                taipei: "台北",
+                taichung: "台中",
+                kaohsiung: "高雄",
+            };
             const locationSelect = document.getElementById("location");
             locationSelect.addEventListener("change", function () {
                 locationSelect.classList = ["location-" + this.value];
             });
             locationSelect.classList = ["location-" + locationSelect.value];
+
+            document.getElementById("registrationForm").onsubmit = function (
+                event
+            ) {
+                event.preventDefault(); // Prevent the default form submission
+                document.querySelector("#result h2").textContent = "Sending...";
+                document.querySelector("#result").scrollIntoView();
+                document.getElementById("form").style.display = "none";
+                document.getElementById("result").style.display = "block";
+                // Collect all input data into one array
+                // var formData = Array.from(
+                //     new FormData(this),
+                //     ([key, value]) => {
+                //         return value ? key : "";
+                //     }
+                // );
+                var formData = [];
+                formData.push(
+                    translate[document.getElementById("location").value]
+                );
+                formData.push(document.getElementById("chosen").textContent);
+                // add location to the beginning of the array
+                var textInputs = document.querySelectorAll(
+                    "input[type=text], input[type=tel], textarea"
+                );
+                textInputs.forEach(textInput => {
+                    formData.push(textInput.value);
+                });
+
+                var radios = document.querySelectorAll(
+                    "input[type=radio]:checked"
+                );
+
+                radios.forEach(radio => {
+                    formData.push(radio.value);
+                });
+                var checkboxes = document.querySelectorAll(
+                    "input[type=checkbox]"
+                );
+                checkboxes.forEach(checkbox => {
+                    formData.push(checkbox.checked);
+                });
+
+                console.log(formData);
+                // Send data via POST request
+                try {
+                    fetch(
+                        "https://script.google.com/macros/s/AKfycbyojuCmlC-r0reJGioHVX3ld7vjGG1RyRHOBkV_EdMJUmKjjt4g7cM_d8Qg0TOwJs7ryQ/exec",
+                        {
+                            method: "POST",
+                            redirect: "follow",
+                            headers: {
+                                "Content-Type": "text/plain;charset=utf-8",
+                            },
+                            body: JSON.stringify(formData),
+                        }
+                    )
+                        .then(response => response.text())
+                        .then(data => {
+                            // Display the result in the 'result' div
+                            if (data == "ok") {
+                                document.querySelector(
+                                    "#result h2"
+                                ).textContent = "報名成功！";
+                                document.querySelector(
+                                    "#result .success"
+                                ).style.display = "block";
+                                document.querySelector(
+                                    "#result .success span"
+                                ).textContent = formData[3];
+                            } else
+                                document.querySelector(
+                                    "#result h2"
+                                ).textContent = data;
+                        })
+                        .catch(error => {
+                            document.querySelector("#result h2").textContent =
+                                data;
+                        });
+                } catch (error) {
+                    document.querySelector("#result h2").textContent = error;
+                }
+            };
+
+            document.querySelectorAll(".courseInfo").forEach(courseInfo => {
+                courseInfo.querySelector(".signUp").onclick = function () {
+                    document.getElementById("intro").style.display = "none";
+                    document.getElementById("form").style.display = "block";
+                    document.getElementById("chosen").textContent =
+                        translate[document.getElementById("location").value] +
+                        " " +
+                        courseInfo.querySelector("h3").textContent;
+                    //smmthly scroll to top
+                    window.scrollTo({
+                        top: 0,
+                        behavior: "smooth",
+                    });
+                };
+            });
+
+            const back = () => {
+                document.getElementById("intro").style.display = "block";
+                document.getElementById("form").style.display = "none";
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth",
+                });
+            };
         </script>
     </body>
 </html>

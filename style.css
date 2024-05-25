@@ -49,7 +49,7 @@ h1 {
     font-weight: 900;
     text-shadow: 3px 1px 1px var(--secondary), 3px 2px 1px var(--secondary),
         3px 3px 1px var(--secondary);
-    animation: zoomIn 0.5s ease-in-out forwards;
+    animation: zoomIn 0.8s ease-in-out forwards;
     animation-delay: 0.5s;
     transform: scale(0);
 }
@@ -79,10 +79,10 @@ h1 div,
 .author,
 .endDate {
     opacity: 0;
-    animation: fadeIn 0.5s ease forwards;
+    animation: fadeIn 1s ease forwards;
 }
 .endDate {
-    animation-delay: 1s;
+    animation-delay: 1.2s;
 }
 #intro {
     padding-top: 5em;
@@ -125,6 +125,13 @@ h2::after {
         3px 4px 1px var(--secondary);
     border: none;
     outline: transparent;
+    transition: all 0.3s ease;
+}
+
+.round:hover,
+.signUp:hover {
+    box-shadow: 5px 4px 1px var(--secondary), 5px 5px 1px var(--secondary),
+    5px 6px 1px var(--secondary);
 }
 .signUp {
     margin-block: 1rem 2rem;
@@ -143,6 +150,10 @@ h2::after {
     font-size: 1rem;
     line-height: 1.5;
     margin-block: 0;
+}
+
+.intro p:first-child {
+    margin-bottom: 0.5em;
 }
 p {
     font-size: 1.2rem;
@@ -243,4 +254,91 @@ h3 {
 
 .location-kaohsiung ~ .kaohsiung {
     display: block;
+}
+
+.selected button {
+    background: none;
+    outline: none;
+    display: inline;
+    font-size: 1em;
+    font-weight: 800;
+    color: var(--secondary);
+    cursor: pointer;
+    border: none;
+}
+
+#intro {
+    display: block;
+}
+
+#form{
+    display: none;
+}
+
+#result {
+    display: none;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid #000;
+    background-color: #fff;
+    margin-bottom: 1rem;
+    display: block;
+    margin-block: 0.5rem 2rem;
+    width: 100%;
+}
+
+#form label {
+    font-size: 1.5rem;
+}
+
+textarea {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid #000;
+    background-color: #fff;
+    margin-bottom: 1rem;
+    display: block;
+    margin-block: 0.5rem 2rem;
+    width: 100%;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+legend {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+}
+
+input[type="submit"] {
+    cursor: pointer;
+}
+
+.success{
+    display: none;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--primary);
+    margin-block: 1rem;
 }
