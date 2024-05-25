@@ -236,6 +236,7 @@
                         <li><b>建議程度:</b> 英檢初級（CEFR A2）以上</li>
                         <li><b>營隊費用:</b> 6500元</li>
                         <li>
+                            <b>營隊時間:</b>
                             7/26（五）~7/28（日）9:00-16:00 + 7/28
                             8:30-12:30（共計2.5天）
                         </li>
@@ -623,9 +624,13 @@
                     document.getElementById("intro").style.display = "none";
                     document.getElementById("form").style.display = "block";
                     document.getElementById("chosen").textContent =
+                        
+                        courseInfo
+                            .querySelector("h3")
+                            .textContent.replace("】", "") +
+                        " —— " +
                         translate[document.getElementById("location").value] +
-                        " " +
-                        courseInfo.querySelector("h3").textContent;
+                        "場】";
                     //smmthly scroll to top
                     window.scrollTo({
                         top: 0,
