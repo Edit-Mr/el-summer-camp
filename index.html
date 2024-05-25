@@ -293,7 +293,8 @@
                     />
                     <label for="phone">手機號碼:</label>
                     <input type="tel" id="phone" name="phone" required />
-
+                    <label for="email">電子郵件:</label>
+                    <input type="email" id="email" name="email" required />
                     <label for="english_score"
                         >英文檢定成績 或 英文段考平均成績:</label
                     >
@@ -558,7 +559,7 @@
                 formData.push(document.getElementById("chosen").textContent);
                 // add location to the beginning of the array
                 var textInputs = document.querySelectorAll(
-                    "input[type=text], input[type=tel], textarea"
+                    "input[type=text], input[type=tel],input[type=email], textarea"
                 );
                 textInputs.forEach(textInput => {
                     formData.push(textInput.value);
