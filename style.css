@@ -29,7 +29,7 @@ body {
 main {
     max-width: 800px;
     margin: 0 auto;
-    padding: 1em;
+    padding: 1.5em;
 }
 h1,
 h2,
@@ -108,7 +108,8 @@ h2::after {
     left: -0.5rem;
 }
 
-.round {
+.round,
+.signUp {
     border-radius: 1.5rem;
     width: fit-content;
     background: var(--primary);
@@ -122,6 +123,13 @@ h2::after {
     margin-block: 1.5rem 3rem;
     box-shadow: 3px 2px 1px var(--secondary), 3px 3px 1px var(--secondary),
         3px 4px 1px var(--secondary);
+    border: none;
+    outline: transparent;
+}
+.signUp {
+    margin-block: 1rem 2rem;
+    cursor: pointer;
+    font-weight: 600;
 }
 
 .intro {
@@ -145,12 +153,12 @@ p {
 .banner {
     width: 100%;
     border-radius: 1rem;
-    margin: 1rem;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    margin-block: 1rem;
 }
 
 .recap {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .recap a {
@@ -195,7 +203,7 @@ footer a {
 }
 .remind {
     border-left: 0.3rem solid var(--primary);
-    padding: 1rem;
+    padding: 0.5rem 1rem;
     font-style: italic;
     line-height: 1.5;
 }
@@ -214,4 +222,25 @@ select {
 }
 .select {
     margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+    margin-block: 1.5rem 0.5rem;
+}
+
+.courseInfo {
+    display: none;
+}
+
+.location-taichung ~ .taichung {
+    display: block;
+}
+
+.location-taipei ~ .taipei {
+    display: block;
+}
+
+.location-kaohsiung ~ .kaohsiung {
+    display: block;
 }
