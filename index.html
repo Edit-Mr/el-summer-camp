@@ -513,9 +513,9 @@
                 <h2></h2>
                 <div class="success">
                     非常感謝您報名參與力甄教育團隊 2024 暑期營隊，<br />
-                    我們將盡速確認報名資料，並寄送營隊及繳費相關資訊至<span
-                    ></span><br />
-                    若有任何問題也歡迎聯絡我們，將由專業人員為您解答！
+                    營隊及繳費相關資訓已寄送至<span
+                    ></span> (若無收到請檢查垃圾郵件)<br />
+                    若有任何問題也歡迎聯絡我們!
                 </div>
             </section>
             <footer>
@@ -605,7 +605,7 @@
                                 ).style.display = "block";
                                 document.querySelector(
                                     "#result .success span"
-                                ).textContent = formData[3];
+                                ).textContent = formData[5];
                             } else
                                 document.querySelector(
                                     "#result h2"
@@ -625,7 +625,6 @@
                     document.getElementById("intro").style.display = "none";
                     document.getElementById("form").style.display = "block";
                     document.getElementById("chosen").textContent =
-                        
                         courseInfo
                             .querySelector("h3")
                             .textContent.replace("】", "") +

@@ -347,3 +347,7 @@ input[type="submit"] {
     text-align: center;
     margin: auto;
 }
+
+#result .success span{
+    color: var(--secondary);
+}
