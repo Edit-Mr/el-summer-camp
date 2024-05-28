@@ -131,7 +131,7 @@ h2::after {
 .round:hover,
 .signUp:hover {
     box-shadow: 5px 4px 1px var(--secondary), 5px 5px 1px var(--secondary),
-    5px 6px 1px var(--secondary);
+        5px 6px 1px var(--secondary);
 }
 .signUp {
     margin-block: 1rem 2rem;
@@ -271,7 +271,7 @@ h3 {
     display: block;
 }
 
-#form{
+#form {
     display: none;
 }
 
@@ -334,7 +334,7 @@ input[type="submit"] {
     cursor: pointer;
 }
 
-.success{
+.success {
     display: none;
     text-align: center;
     font-size: 1.5rem;
@@ -343,11 +343,15 @@ input[type="submit"] {
     margin-block: 1rem;
 }
 
-#result h2{
+#result h2 {
     text-align: center;
     margin: auto;
 }
 
-#result .success span{
+#result .success span {
     color: var(--secondary);
+}
+
+.emfont-jfopenhuninn {
+    font-family: "JF Open Huninn", sans-serif;
 }
