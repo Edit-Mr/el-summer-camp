@@ -352,6 +352,6 @@ input[type="submit"] {
     color: var(--secondary);
 }
 
-.emfont-jfopenhuninn {
+.emfont-jfopenhuninn,input,textarea,select,button {
     font-family: "JF Open Huninn", sans-serif;
 }
