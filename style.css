@@ -163,6 +163,7 @@ p {
 
 .banner {
     width: 100%;
+    height:fit-content;
     border-radius: 1rem;
     margin-block: 1rem;
 }
